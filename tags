@@ -6,8 +6,8 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
-Myapp	config/application.rb	/^module Myapp$/;"	m
-Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Myapp
+Cuke	config/application.rb	/^module Cuke$/;"	m
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Cuke
 WeblogController	README.rdoc	/^  class WeblogController < ActionController::Base$/;"	c
 destroy	README.rdoc	/^    def destroy$/;"	f	class:WeblogController
 WeblogController	README.rdoc	/^  class WeblogController < ActionController::Base$/;"	c

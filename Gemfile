@@ -7,6 +7,16 @@ gem 'rails', '3.2.11'
 
 gem 'sqlite3'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'launchy'
+end
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,27 +32,4 @@ end
 
 gem 'jquery-rails'
 
-group :development, :test do
-  gem 'rspec-rails'
-  gem 'launchy'
-end
-
-group :test do
-  gem 'cucumber-rails', :require => false
-  gem 'database_cleaner'
-end
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+ gem 'debugger'
